@@ -17,13 +17,12 @@
   "rules": {
     "react/function-component-definition": "off",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
   },
   "overrides": [
     {
-       // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.js' or 'redux/**/*Slice.js'
       "files": ["src/**/*Slice.js"],
-      // avoid state param assignment
       "rules": { "no-param-reassign": ["error", { "props": false }] }
     }
   ],
