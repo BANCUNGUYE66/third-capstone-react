@@ -26,8 +26,8 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "babel src -d lib",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -49,7 +49,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.21.8",
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/plugin-syntax-jsx": "^7.21.4",
     "@babel/preset-react": "^7.18.6",
